@@ -15,42 +15,35 @@ void draw() {
   noStroke();
   fill(210);
 
-  //Head
-  //  Base
+  // Base
   rect(200, 200, 100, 100);
 
-  //  Ears
-  rect(195, 150, 10, 30);
-  rect(205, 150, 10, 50);
-  rect(215, 150, 10, 70);
-  rect(225, 150, 10, 100);
-  rect(235, 150, 10, 110);
-  rect(245, 150, 10, 120);
+  // Ears
+  triangle(200, 150, 250, 150, 250, 100);
 
   fill(0);
-  rect(205, 140, 10, 10);
-  rect(215, 137, 10, 15);
-  rect(225, 135, 10, 20);
-  rect(235, 130, 10, 30);
+  stroke(0);
+  triangle(212.5, 150, 245, 150, 245, 115);
 
 
-  //  Snoot
+  // Snoot
+  noStroke();
   fill(210);
-  rect(160, 225, 110, 50);
+  arc(210, 225, 250, 70,  HALF_PI + QUARTER_PI, PI + QUARTER_PI);
+  rect(160, 225, 70, 50);
   
   stroke(0);
   noFill();
-  ellipse(125, 230, 35, 35);
+  arc(140, 220, 100, 40, HALF_PI, PI + QUARTER_PI);
 
   fill(210);
   noStroke();
   rect(160, 220, 110, 25);
 
   fill(0);
-  rect(105, 205, 10, 10);
-  rect(107, 220, 1, 30);
+  arc(105, 205, 25, 25, 1.1 * (HALF_PI + QUARTER_PI),  1.1 * (1.75 * PI));
 
-  //  Eyes
+  // Eyes
   fill(0);
   rect(200, 180, 25, 25);
   fill(255);
